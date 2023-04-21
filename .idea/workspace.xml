@@ -57,7 +57,7 @@
       <recent name="$PROJECT_DIR$/src/test/java/feature" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Price verification">
+  <component name="RunManager" selected="JUnit.TestRunner">
     <configuration name="Scenario: Price verification" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/feature/Guru99PaymentGateway.feature" />
@@ -135,8 +135,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: Price verification" />
         <item itemvalue="JUnit.TestRunner" />
+        <item itemvalue="Cucumber Java.Scenario: Price verification" />
         <item itemvalue="Cucumber Java.Scenario: Url verification" />
         <item itemvalue="Cucumber Java.Scenario: Verification whether the user can buy the product in the required quantity - @TC5 - Example n°2" />
       </list>
@@ -172,7 +172,28 @@
       <option name="project" value="LOCAL" />
       <updated>1682119232880</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="CucumberBDDFinalProject">
+      <created>1682119585402</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682119585402</updated>
+    </task>
+    <task id="LOCAL-00005" summary="CucumberBDDFinalProject">
+      <created>1682119651136</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1682119651136</updated>
+    </task>
+    <task id="LOCAL-00006" summary="CucumberBDDFinalProject">
+      <created>1682119681001</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1682119681001</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

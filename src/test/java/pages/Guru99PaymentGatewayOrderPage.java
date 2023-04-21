@@ -27,30 +27,25 @@ public class Guru99PaymentGatewayOrderPage extends BrowserUtils {
 
 
     public void urlVerification(String expectedPartUrl) {
-        setWaitTime();
         Assert.assertTrue("Url verification failed",
                 Driver.getDriver().getCurrentUrl().contains(expectedPartUrl));
     }
 
     public void headerVerification(String expectedHeader) {
-        setWaitTime();
         Assert.assertEquals("Header verification failed",
                 expectedHeader, productHeader.getText());
     }
 
     public void priceVerification(String expectedPrice) {
-        setWaitTime();
         Assert.assertTrue("Url verification failed",
                 priceHeader.getText().contains(expectedPrice));
     }
 
     public void selectQuantity (String quantity) {
-        setWaitTime();
         selectFromDropdown(quantityDropdown,quantity);
     }
 
     public void clickBuyNow() {
-        setWaitTime();
         clickWithWait(buyNowButton);
     }
 
