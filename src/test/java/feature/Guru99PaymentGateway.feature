@@ -3,22 +3,22 @@ Feature: Payment Gateway functional test
   Background: Open Guru99 order page
     Given the user wants to visit Guru99 order page
 
-  @TC1 @Smoke
+  @TC1 @Smoke_Suite
   Scenario: Url verification
     When the user wants to check that URL contain "payment-gateway"
 
-  @TC2 @Regression
+  @TC2 @Regression_Suite
   Scenario: Header verification
     When the user wants to check that URL contain "payment-gateway"
     Then the user wants to verify "Mother Elephant With Babies Soft Toy" header
 
-  @TC3 @Regression
+  @TC3 @Regression_Suite
   Scenario: Price verification
     When the user wants to check that URL contain "payment-gateway"
     Then the user wants to verify "Mother Elephant With Babies Soft Toy" header
     And the user wants to verify that the toy price is "20"
 
-  @TC4 @Regression
+  @TC4 @Regression_Suite
   Scenario: Verification whether the user can buy the product in the required quantity
     When the user wants to check that URL contain "payment-gateway"
     Then the user wants to verify "Mother Elephant With Babies Soft Toy" header
@@ -33,7 +33,7 @@ Feature: Payment Gateway functional test
     And the user wants to click on pay now button
     Then the user wants to verify a "Payment successfull!" message
 
-  @TC5 @Smoke
+  @TC5 @Smoke_Suite
   Scenario Outline: Verification whether the user can buy the product in the required quantity
     When the user wants to check that URL contain "payment-gateway"
     Then the user wants to verify "Mother Elephant With Babies Soft Toy" header
