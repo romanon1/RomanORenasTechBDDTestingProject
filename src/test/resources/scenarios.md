@@ -10,7 +10,6 @@ In order page you need to verify that the toy price is 20$
 Create a scenario verify that the toy price is 20$
 
 ####	•	Scenario
-
 Create a scenario that the URL should contain “payment-gateway”
 
 ####	•	Scenario
