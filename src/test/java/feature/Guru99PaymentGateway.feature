@@ -9,20 +9,14 @@ Feature: Payment Gateway functional test
 
   @TC2 @Regression_Suite
   Scenario: Header verification
-    When the user wants to check that URL contain "payment-gateway"
     Then the user wants to verify "Mother Elephant With Babies Soft Toy" header
 
   @TC3 @Regression_Suite
   Scenario: Price verification
-    When the user wants to check that URL contain "payment-gateway"
-    Then the user wants to verify "Mother Elephant With Babies Soft Toy" header
-    And the user wants to verify that the toy price is "20"
+    Then the user wants to verify that the toy price is "20"
 
   @TC4 @Regression_Suite
   Scenario: Verification whether the user can buy the product in the required quantity
-    When the user wants to check that URL contain "payment-gateway"
-    Then the user wants to verify "Mother Elephant With Babies Soft Toy" header
-    And the user wants to verify that the toy price is "20"
     Then the user wants to choose "5" units of the product
     And the user wants to click on buy button
     Then The user wants to enter payment data as follows
@@ -35,9 +29,6 @@ Feature: Payment Gateway functional test
 
   @TC5 @Smoke_Suite
   Scenario Outline: Verification whether the user can buy the product in the required quantity
-    When the user wants to check that URL contain "payment-gateway"
-    Then the user wants to verify "Mother Elephant With Babies Soft Toy" header
-    And the user wants to verify that the toy price is "20"
     Then the user wants to choose certain "<Quantity>" of the product
     And the user wants to click on buy button
     Then The user wants to enter payment data as follows

@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/java/feature",
         glue = "stepDefinitions",
-        tags = "@Smoke_Suite",
+        tags = "@Regression_Suite",
         dryRun = false,
         plugin = {
                 "pretty",
