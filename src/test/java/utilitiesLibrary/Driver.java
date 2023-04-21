@@ -5,7 +5,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
 public class Driver {
     private static ThreadLocal<WebDriver> driverPool = new ThreadLocal<>();
@@ -24,13 +26,17 @@ public class Driver {
                         WebDriverManager.firefoxdriver().setup();
                         driverPool.set(new FirefoxDriver());
                         break;
+                    case "edge":
+                        WebDriverManager.edgedriver().setup();
+                        driverPool.set(new EdgeDriver());
+                        break;
                     case "chrome-headless":
                         WebDriverManager.chromedriver().setup();
                         driverPool.set(new ChromeDriver(new ChromeOptions().setHeadless(true)));
                         break;
-                    case "edge":
-                        WebDriverManager.edgedriver().setup();
-                        driverPool.set(new EdgeDriver());
+                    case "firefox-headless":
+                        WebDriverManager.firefoxdriver().setup();
+                        driverPool.set(new FirefoxDriver(new FirefoxOptions().setHeadless(true)));
                         break;
                     default:
                         System.out.println("Undefined browser type");
